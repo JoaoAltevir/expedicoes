@@ -1,4 +1,4 @@
-import {Schema, model} from mongoose;
+import { Schema, model } from mongoose;
 
 const explorerSchema = new Schema({
     name: {
@@ -6,7 +6,7 @@ const explorerSchema = new Schema({
         required: true
     },
     fieldOfStudy: {
-        type: Schema.Types.String, 
+        type: Schema.Types.String,
         required: true
     },
     expeditionsParticipated: {

@@ -21,7 +21,7 @@ export const index = async (req,res) => {
 
 export const show = async (req, res) => {
     try {
-        const content = await Expedition.findById(req.params.id).populate("Species", "Explorer").exec();
+        const content = await Expedition.findById(req.params.id).populate("participants", "speciesFound").exec();
         res.json(content)
     } catch (error) {
         res.status(400).json(error);

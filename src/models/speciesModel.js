@@ -12,12 +12,11 @@ const speciesSchema = new Schema({
     rarity: {
         type: Schema.Types.Number,
         required: true,
-        min: 1,
         max: 10
     },
     documented: {
         type: Schema.Types.Boolean,
-        required: true,
+        required: false,
         default: false
     }
 })

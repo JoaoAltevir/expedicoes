@@ -1,5 +1,4 @@
-import {Schema, model} from mongoose
-
+import {Schema, model} from "mongoose"
 const expeditionSchema = new Schema({
     location: {
         type: Schema.Types.String,
@@ -9,7 +8,7 @@ const expeditionSchema = new Schema({
         type: Schema.Types.Date,
         required: true
     },
-    partipants: {
+    participants: {
         type:[Schema.Types.ObjectId],
         required: true,
         ref: "Explorer"

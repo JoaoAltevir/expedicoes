@@ -5,7 +5,6 @@ import explorerRouter from "./routers/explorerRouter.js";
 import speciesRouter from "./routers/speciesRouter.js";
 import expeditionsRouter from "./routers/expeditionsRouter.js"
 
-
 const app = e();
 
 app.use(e.json());

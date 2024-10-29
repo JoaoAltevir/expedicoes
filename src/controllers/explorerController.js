@@ -1,5 +1,4 @@
-import Explorer from "../models/explorerModel";
-import explorerModel from "../models/explorerModel";
+import Explorer from "../models/explorerModel.js";
 
 export const store = async (req, res) => {
     try {
